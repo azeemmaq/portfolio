@@ -90,13 +90,15 @@ details[open] > summary .disclosure::after { transform: rotate(0); }
 .experience { padding-top: 70px; background: var(--surface); }
 .experience > .section-heading { margin-bottom: 54px; }
 .experience-row { padding: 30px 24px; margin: 0 -24px 8px; background: var(--paper); }
-.experience-row summary { display: grid; grid-template-columns: 1fr 2.15fr 1fr 18px; gap: 24px; }
+.experience-row summary { display: grid; grid-template-columns: minmax(0, 1fr) 18px; column-gap: 24px; row-gap: 10px; align-items: start; }
 .job-period, .job-location { font-size: 14px; line-height: 1.6; }
-.job-period { font-variant-numeric: tabular-nums; }
-.job-main { display: flex; flex-direction: column; gap: 8px; }
+.job-period { grid-column: 1; grid-row: 1; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--accent); }
+.job-main { grid-column: 1; grid-row: 2; display: flex; flex-direction: column; gap: 8px; }
+.job-location { grid-column: 1; grid-row: 3; color: var(--muted); }
+.experience-row .disclosure { grid-column: 2; grid-row: 1 / span 3; align-self: center; }
 .job-company { font-family: var(--display); font-size: clamp(24px, 2.3vw, 32px); font-weight: 600; line-height: 1.05; letter-spacing: -.035em; }
 .job-title { font-size: 15px; line-height: 1.5; }
-.job-details { margin: 28px 0 0 calc((100% - 90px) / 5.15 + 24px); max-width: 720px; }
+.job-details { margin: 24px 0 0; max-width: 78ch; }
 .job-details > p { font-size: 15px; }
 .job-details ul { margin: 18px 0 4px; font-size: 16px; }
 .job-details li + li { margin-top: 10px; }
@@ -162,9 +164,6 @@ details[open] > summary .disclosure::after { transform: rotate(0); }
   .expertise-grid { gap: 30px; }
   .credentials-grid { gap: 60px; }
   .project-detail { gap: 40px; }
-  .job-location { display: none; }
-  .experience-row summary { grid-template-columns: 1fr 2.4fr 18px; }
-  .job-details { margin-left: calc((100% - 66px) / 3.4 + 24px); }
   .contact-main { grid-template-columns: 1fr 1fr; gap: 32px; }
   .contact-details > a { font-size: 18px; }
 }
@@ -233,10 +232,9 @@ details[open] > summary .disclosure::after { transform: rotate(0); }
   .details-content { padding-right: 0; }
   .experience > .section-heading { margin-bottom: 30px; }
   .experience-row { margin: 0 -8px 8px; padding: 23px 16px; }
-  .experience-row summary { grid-template-columns: 1fr 18px; gap: 12px; }
+  .experience-row summary { gap: 12px; }
   .job-period { grid-column: 1; grid-row: 1; font-size: 13px; }
   .job-main { grid-column: 1; grid-row: 2; gap: 9px; }
-  .experience-row .disclosure { grid-column: 2; grid-row: 1 / span 2; }
   .job-company { font-size: 26px; }
   .job-title { font-size: 14px; }
   .job-details { margin: 22px 0 0; font-size: 15px; }
