@@ -62,4 +62,10 @@ Pushes to `main` run `.github/workflows/deploy.yml`: install from the lockfile, 
 
 The current design uses a white and pale-blue foundation, vivid blue actions and native system sans-serif typography. Melbourne is a prominent text location; the hero includes a conceptual telecom network illustration with motion and reduced-motion support.
 
-The hero is an interactive conceptual network scene: select airport, healthcare, retail or hospitality sites to explore documented projects. Animated signal packets and coverage rings continue while the scene is visible. A pause/play control, reduced-motion handling, and automatic suspension off screen or in a hidden tab keep visitors in control. The prominent navigation résumé button downloads the same PDF as the existing links.
+The hero is an interactive conceptual network scene: select airport, healthcare, retail or hospitality sites to explore documented projects. Animated signal packets and coverage rings continue while the scene is visible. Reduced-motion handling and automatic suspension off screen or in a hidden tab avoid unnecessary motion; no pause/play button is shown. The prominent navigation résumé button downloads the same PDF as the existing links.
+
+## Theme
+
+The site follows `prefers-color-scheme` on first visit and responds to system changes until a manual choice is made. The persistent sun/moon header button overrides that preference; the choice is saved locally and synchronized across tabs. Theme initialization runs before page rendering to avoid a flash of the wrong theme, with a storage fallback for restricted browsers.
+
+Run theme behavior checks with `node --test scripts/theme.test.mjs`. The downloadable résumé keeps its print-friendly white background.

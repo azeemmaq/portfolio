@@ -10,7 +10,6 @@ const sites = [
 
 export default function HeroNetwork() {
   const [selected, setSelected] = useState(0)
-  const [paused, setPaused] = useState(false)
   const [inView, setInView] = useState(true)
   const [tabVisible, setTabVisible] = useState(!document.hidden)
   const scene = useRef<HTMLDivElement>(null)
@@ -23,8 +22,8 @@ export default function HeroNetwork() {
     return () => { observer.disconnect(); document.removeEventListener('visibilitychange', updateVisibility) }
   }, [])
 
-  return <div ref={scene} className="connection-scene" data-running={!paused && inView && tabVisible}>
-    <div className="connection-toolbar"><span>Explore a connection</span><button className="motion-control" type="button" onClick={() => setPaused(!paused)} aria-label={paused ? 'Play network animation' : 'Pause network animation'}>{paused ? 'Play' : 'Pause'}<span aria-hidden="true">{paused ? '▷' : 'Ⅱ'}</span></button></div>
+  return <div ref={scene} className="connection-scene" data-running={inView && tabVisible}>
+    <div className="connection-toolbar"><span>Explore a connection</span></div>
     <div className="connection-map">
       <svg className="connection-wires" viewBox="0 0 600 370" fill="none" aria-hidden="true">
         <circle className="coverage-ring" cx="300" cy="185" r="64" />

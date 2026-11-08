@@ -1,7 +1,7 @@
 :root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  color: #132b46;
-  background: #ffffff;
+  color: var(--ink);
+  background: var(--paper);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -11,9 +11,33 @@
   --paper: #ffffff;
   --surface: #f0f6fc;
   --muted: #51657c;
+  --hero: #f5f9ff;
+  --network-surface: #e6f2ff;
+  --hover-surface: #d4e8ff;
+  --action: #0866dc;
+  --action-hover: #004eaf;
+  --on-action: #ffffff;
+  --wire: #9cbde5;
+  --packet: #488ee7;
+  --packet-selected: #0046a5;
   --gutter: clamp(22px, 4.2vw, 72px);
   --display: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --ease: cubic-bezier(.22, .68, 0, 1.01);
+}
+[data-theme="dark"] {
+  --ink: #e5eefc;
+  --accent: #7bb5ff;
+  --paper: #0b1422;
+  --surface: #101e30;
+  --muted: #adbed3;
+  --hero: #0d192a;
+  --network-surface: #142a43;
+  --hover-surface: #203c5e;
+  --action: #176bd6;
+  --action-hover: #0a59bb;
+  --wire: #56799f;
+  --packet: #8ac3ff;
+  --packet-selected: #a8d2ff;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 92px; }

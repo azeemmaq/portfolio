@@ -27,6 +27,7 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
+      - run: node --test scripts/theme.test.mjs
       - run: npm run lint
       - run: npm run build
       - uses: actions/configure-pages@v5
