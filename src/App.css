@@ -3,7 +3,7 @@
 .section-pad { padding: 110px var(--gutter); }
 .site-header { display: flex; align-items: center; justify-content: space-between; padding: 22px var(--gutter); background: var(--paper); position: relative; z-index: 10; }
 .wordmark { font-family: var(--display); font-size: 28px; font-weight: 750; line-height: 1; letter-spacing: -.06em; color: var(--accent); }
-.navigation { display: flex; align-items: center; gap: 32px; font-size: 15px; }
+.navigation { display: flex; align-items: center; gap: 22px; font-size: 15px; }
 .navigation > a { padding: 10px 0; position: relative; }
 .navigation > a::after, .text-link::after { content: ''; position: absolute; bottom: 4px; height: 2px; background: currentColor; left: 0; right: 0; transform: scaleX(0); transform-origin: left; transition: transform .25s; }
 .navigation > a:hover::after, .navigation > a[aria-current]::after, .text-link:hover::after { transform: scaleX(1); }
@@ -18,9 +18,6 @@
 .hero-line > span { display: block; }
 .hero-description { font-size: clamp(18px, 1.6vw, 23px); color: var(--muted); line-height: 1.6; }
 .hero-actions { display: flex; align-items: center; gap: 30px; margin-top: 34px; flex-wrap: wrap; }
-.hero-network { color: var(--accent); padding: 20px; background: #e6f2ff; border-radius: 28px; }
-.hero-network-caption { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; font-weight: 600; }
-.hero-network > p { font-size: 15px; margin-top: 14px; color: var(--muted); }
 .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 48px; padding: 18px 24px; border-radius: 999px; font-size: 16px; min-height: 56px; transition: background .25s, color .25s, transform .25s; }
 .button-dark { background: var(--accent); color: var(--paper); }
 .button-dark:hover { background: #004eaf; }
@@ -180,8 +177,6 @@ details[open] > summary .disclosure::after { transform: rotate(0); }
   .navigation > a::after { display: none; }
   .hero { padding-top: 36px; }
   .hero-layout { grid-template-columns: 1fr; gap: 35px; }
-  .hero-network { padding: 15px; border-radius: 20px; }
-  .hero-network .network-graphic { max-height: 260px; }
   .hero-role { font-size: 16px; }
   .hero-actions { gap: 25px; }
   .hero-actions .button { width: 100%; }
@@ -260,3 +255,15 @@ details[open] > summary .disclosure::after { transform: rotate(0); }
 }
 
 @keyframes signal-flow { to { stroke-dashoffset: -180; } }
+
+.navigation .nav-resume { padding: 14px 20px; border-radius: 28px; background: var(--accent); color: #fff; font-weight: 600; white-space: nowrap; }
+.nav-resume span { margin-left: 12px; }
+.navigation .nav-contact { background: transparent; color: var(--accent); padding: 12px 0; margin-left: 0; white-space: nowrap; }
+@media (min-width: 761px) and (max-width: 1100px) { .navigation { gap: 15px; } .navigation .nav-resume { padding: 14px 16px; } }
+
+@media (min-width: 761px) and (max-width: 1000px) {
+  .menu-toggle { display: flex; align-items: center; gap: 22px; background: none; border: 0; font-size: 16px; padding: 10px; }
+  .navigation { display: none; }
+  .navigation.is-open { display: flex; position: absolute; left: 0; right: 0; top: 100%; background: var(--paper); padding: 20px var(--gutter); flex-direction: column; align-items: stretch; gap: 12px; }
+  .navigation .nav-resume { text-align: center; }
+}

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import profile from './data/profile.json'
 import './App.css'
+import HeroNetwork from './HeroNetwork'
 
 const resumeUrl = `${import.meta.env.BASE_URL}Azeem-Maqbool-Resume.pdf`
 const imageUrl = (name: string) => `${import.meta.env.BASE_URL}images/${name}`
@@ -76,6 +77,7 @@ function App() {
       <nav id="primary-navigation" className={menuOpen ? 'navigation is-open' : 'navigation'} aria-label="Main navigation">
         {nav.map(([label, id]) => <a key={id} href={`#${id}`} aria-current={activeSection === id ? 'location' : undefined} onClick={() => setMenuOpen(false)}>{label}</a>)}
         <a href={profile.linkedin} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)}>LinkedIn <span aria-hidden="true">↗</span></a>
+        <a className="nav-resume" href={resumeUrl} download onClick={() => setMenuOpen(false)}>Download Resume <span aria-hidden="true">↓</span></a>
         <a className="nav-contact" href="#contact" onClick={() => setMenuOpen(false)}>Let’s talk <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
@@ -88,7 +90,7 @@ function App() {
             <p className="hero-description">I bring networks to life.<br />From in-building coverage to 5G deployment.</p>
             <div className="hero-actions"><a className="button button-dark" href="#projects">Explore my work <Arrow down /></a><a className="text-link" href={resumeUrl} download>Download résumé <span aria-hidden="true">↓</span></a></div>
           </div>
-          <div className="hero-network"><NetworkGraphic nodes={8} /><div className="hero-network-caption"><span>5G NR</span><span>IBS / DAS</span><span>Connected infrastructure</span></div><p>From one site to a connected network.</p></div>
+          <HeroNetwork />
         </div>
         <div className="hero-footnote"><span>15+ years of international experience</span><span>Based in Melbourne, Victoria, Australia</span></div>
       </section>

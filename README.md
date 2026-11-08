@@ -61,3 +61,5 @@ Live website: https://awaismirza.github.io/azeem-portfolio/
 Pushes to `main` run `.github/workflows/deploy.yml`: install from the lockfile, lint, build and deploy to GitHub Pages. The Vite base path is `/azeem-portfolio/`. The generated PDF is committed, so GitHub’s runner does not require Python.
 
 The current design uses a white and pale-blue foundation, vivid blue actions and native system sans-serif typography. Melbourne is a prominent text location; the hero includes a conceptual telecom network illustration with motion and reduced-motion support.
+
+The hero is an interactive conceptual network scene: select airport, healthcare, retail or hospitality sites to explore documented projects. Animated signal packets and coverage rings continue while the scene is visible. A pause/play control, reduced-motion handling, and automatic suspension off screen or in a hidden tab keep visitors in control. The prominent navigation résumé button downloads the same PDF as the existing links.
