@@ -29,7 +29,7 @@ Deploy the generated `dist/` directory to any static host. No API keys, backend,
 
 The work history follows the LinkedIn text supplied by the owner. Project achievements, technical skills, certifications and contact details use the supplied résumé. The owner explicitly chose LinkedIn dates where the sources disagree. The résumé's conflicting career-break entry and the older public Bayt chronology are not included. No current employer after July 2025, invented portfolio work, or GitHub profile is claimed.
 
-The four service descriptions are proposed wording based on documented experience. A personal photograph has not been supplied; the site uses typography rather than a substitute portrait.
+The four service descriptions are proposed wording based on documented experience. The header uses the portrait supplied by the owner, cropped with CSS.
 
 ## Regenerate the PDF
 

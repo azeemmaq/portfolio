@@ -275,3 +275,6 @@ details[open] > summary .disclosure::after { transform: rotate(0); }
 .site-header { gap: 22px; }
 .navigation { margin-left: auto; gap: 16px; }
 @media (max-width: 1000px) { .header-actions { margin-left: auto; } .site-header { gap: 12px; } }
+
+.portrait-mark { display: block; width: 48px; height: 48px; flex-shrink: 0; overflow: hidden; border-radius: 50%; background: var(--surface); }
+.portrait-mark img { height: 100%; object-fit: cover; transform: scale(1.65); transform-origin: 50% 35%; }

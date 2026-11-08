@@ -73,7 +73,7 @@ function App() {
   return <>
     <a className="skip-link" href="#main">Skip to content</a>
     <header className="site-header">
-      <a className="wordmark" href="#home" aria-label="Azeem Maqbool, home">AM<span>.</span></a>
+      <a className="portrait-mark" href="#home" aria-label="Azeem Maqbool, home"><img src={imageUrl('azeem-maqbool.jpeg')} alt="Azeem Maqbool" width="48" height="48" /></a>
       <div className="header-actions"><ThemeToggle />
       <button ref={menuButton} className="menu-toggle" aria-expanded={menuOpen} aria-controls="primary-navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? 'Close' : 'Menu'}<span aria-hidden="true">{menuOpen ? '−' : '+'}</span></button></div>
       <nav id="primary-navigation" className={menuOpen ? 'navigation is-open' : 'navigation'} aria-label="Main navigation">
