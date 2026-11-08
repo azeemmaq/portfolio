@@ -1,0 +1,38 @@
+{
+  "name": "Azeem Maqbool",
+  "title": "Telecommunications Project Engineer",
+  "location": "Melbourne, Victoria, Australia",
+  "email": "azeeem.maqbool@gmail.com",
+  "phoneDisplay": "0403 912 948",
+  "phoneInternational": "+61403912948",
+  "linkedin": "https://www.linkedin.com/in/azeem-maqbool-67233516/",
+  "summary": "Telecommunications engineer with 15+ years of international experience delivering mobile network and in-building coverage projects across the UAE, Oman and Pakistan. Experienced in IBC/IBS, active and passive DAS, 4G/5G, SRAN, commissioning, integration, site acceptance testing and technical troubleshooting. Based in Melbourne with Australian permanent residency and full work rights.",
+  "skills": ["IBC/IBS and active/passive DAS", "5G NR, LTE, WCDMA, GSM and SRAN", "Site surveys, scoping and inspections", "Commissioning, integration and SAT", "RSSI, RSRP, SINR and non-serving cell troubleshooting", "BOM/BOQ and materials coordination", "Field teams and subcontractor supervision", "Project reporting and stakeholder coordination", "Quality assurance and site safety"],
+  "equipment": "Nokia AirScale; Huawei BTS 3900/5900, BBU, UMPT, UBBP, UBRI and RRUs; Huawei RTN 900 series and E-band; NEC microwave; Vertiv and Eltek.",
+  "projects": ["Reem Mall", "Mubadala", "Al Wahda Mall", "General Secretariat", "Abu Dhabi Mall", "Four Seasons Hotel", "World Trade Center Mall", "Marina Mall", "Cleveland Clinic Abu Dhabi"],
+  "services": [
+    {"title": "In-building coverage & DAS", "description": "IBS surveys and design support, active and passive DAS deployment, site upgrades and expansions. Practical experience delivering coverage in airports, malls, hotels, healthcare and government facilities."},
+    {"title": "4G / 5G network delivery", "description": "Installation, commissioning and integration of wireless equipment, SRAN rollouts and network swaps. Coordination across site activities, field teams and acceptance requirements."},
+    {"title": "Testing & troubleshooting", "description": "Site acceptance testing, single-site verification and RF performance troubleshooting. Working with NOC, RF and field teams on RSSI, RSRP, SINR, non-serving cells and commissioning faults."},
+    {"title": "Project & team coordination", "description": "BOM and BOQ preparation, materials coordination, subcontractor supervision and progress reporting. Hands-on oversight of quality, safety and the work needed to reach handover."}
+  ],
+  "experience": [
+    {"company": "Nokia", "title": "Telecommunications Project Engineer", "period": "Apr 2021 – Jul 2025", "location": "United Arab Emirates", "project": "du IBS · 5G, SRAN, SWAP and DAS deployment", "bullets": ["Managed end-to-end wireless delivery across site acquisition, installation, commissioning, integration, testing and customer acceptance.", "Delivered 16 passive SRAN/5G sites and one active 5G site with more than 100 pRRHs at Zayed International Airport, coordinating eight teams.", "Supervised four subcontractor crews and coordinated quality, safety, materials, BOMs/BOQs, progress reporting and stakeholder requirements.", "Resolved commissioning, IBS DAS and RF performance issues with NOC, RF and field teams."]},
+    {"company": "LCC / Tech Mahindra", "title": "Telecommunications Engineer", "period": "Feb 2019 – Mar 2021", "location": "United Arab Emirates", "project": "Huawei-DuMBB · 3G/4G/5G network rollout", "bullets": ["Installed, commissioned and integrated Huawei 5900/3900 BBUs and RRUs for mobile network and IBS projects.", "Troubleshot network configuration, commissioning scripts, RTN 900-series microwave links, E-band and transmission equipment."]},
+    {"company": "Huawei", "title": "Implementation Team Lead", "period": "Feb 2016 – Feb 2019", "location": "United Arab Emirates", "project": "Etisalat network modernization", "bullets": ["Prepared DAS plans and design proposals for GSM, WCDMA and LTE, supported by site surveys, coverage scans and walk-test reviews.", "Supervised installation, commissioning and integration of Huawei BTS and RF equipment; coordinated logistics, subcontractors, customer ATPs and BSS support."]},
+    {"company": "Huawei", "title": "Integration Engineer / IBS Designer", "period": "Apr 2014 – Feb 2016", "location": "United Arab Emirates", "project": "Huawei-DuMBB · IBS design and integration", "bullets": ["Led IBS design, site surveys and site acceptance testing for GSM, WCDMA and LTE networks.", "Supervised Huawei BTS and RF installation, managed field teams and subcontractors, and maintained implementation databases and technical change requests."]},
+    {"company": "LCC", "title": "Support Engineer", "period": "Mar 2011 – Aug 2013", "location": "Oman", "project": "Huawei-Omantel · RF engineering, 2G/3G/LTE", "bullets": ["Performed drive testing, post-processing, network audits, coverage analysis, benchmarking and parameter optimization.", "Conducted single-site verification, voice and video testing, R99/HSDPA checks and cluster analysis."]},
+    {"company": "Saudi Networkers Services", "title": "Project Coordinator", "period": "Apr 2010 – Dec 2010", "location": "United Arab Emirates", "project": "Huawei-du · 3G rollout", "bullets": ["Coordinated site teams and communication between customers and technical teams, overseeing installation and commissioning of Huawei NodeB and microwave equipment."]},
+    {"company": "Saudi Networkers Services", "title": "Telecom Implementation Engineer / Team Leader", "period": "Sep 2009 – Mar 2010", "location": "United Arab Emirates", "project": "Telecommunications implementation and field team leadership", "bullets": ["Worked on telecom implementation and led field teams for network delivery."]},
+    {"company": "Symbia", "title": "Technical Support Engineer", "period": "Jan 2008 – Aug 2009", "location": "Lahore, Pakistan", "project": "BTS and microwave deployment", "bullets": ["Supported BTS installation, integration, commissioning and microwave link deployment."]},
+    {"company": "Foresight Communication", "title": "BSS Engineer", "period": "Aug 2006 – Dec 2007", "location": "Lahore, Pakistan", "project": "ZTE-China Mobile (Paktel) project", "bullets": ["BSS engineering for the ZTE-China Mobile (Paktel) project."]}
+  ],
+  "education": {"degree": "Telecommunications Engineering", "institution": "Preston Institute of Management Sciences & Technology, Pakistan", "period": "2001–2005", "assessment": "Engineers Australia skills assessment: Telecommunication Engineer"},
+  "certifications": [
+    {"title": "Nokia AirScale Power Rectifier & Energy Solutions", "year": "2023"},
+    {"title": "Safety Planning & Control Gate Checks", "year": "2023"},
+    {"title": "Acceptance Closeout Supervisor curriculum", "year": "2023"},
+    {"title": "HSE-LOTO Training", "year": "2021"},
+    {"title": "PDO-HSE, H2S Awareness & Permit, First Aid", "year": "2011"}
+  ]
+}
