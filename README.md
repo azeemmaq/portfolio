@@ -54,9 +54,9 @@ Production compilation and ESLint pass. Browser checks cover desktop (1440px), t
 
 ## GitHub Pages
 
-Public repository: https://github.com/awaismirza/azeem-portfolio
+Public repository: https://github.com/azeemmaq/azeem-portfolio
 
-Live website: https://awaismirza.github.io/azeem-portfolio/
+Live website: https://azeemmaq.github.io/azeem-portfolio/
 
 Pushes to `main` run `.github/workflows/deploy.yml`: install from the lockfile, lint, build and deploy to GitHub Pages. The Vite base path is `/azeem-portfolio/`. The generated PDF is committed, so GitHub’s runner does not require Python.
 
