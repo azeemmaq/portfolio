@@ -7,7 +7,7 @@ A single-page React + TypeScript portfolio built on the existing Vite project. N
 ```sh
 npm install
 npm run dev
-# Open http://localhost:5173/azeem-portfolio/
+# Open http://localhost:5173/portfolio/
 ```
 
 ## Check and build
@@ -54,11 +54,11 @@ Production compilation and ESLint pass. Browser checks cover desktop (1440px), t
 
 ## GitHub Pages
 
-Public repository: https://github.com/azeemmaq/azeem-portfolio
+Public repository: https://github.com/azeemmaq/portfolio
 
-Live website: https://azeemmaq.github.io/azeem-portfolio/
+Live website: https://azeemmaq.github.io/portfolio/
 
-Pushes to `main` run `.github/workflows/deploy.yml`: install from the lockfile, lint, build and deploy to GitHub Pages. The Vite base path is `/azeem-portfolio/`. The generated PDF is committed, so GitHub’s runner does not require Python.
+Pushes to `main` run `.github/workflows/deploy.yml`: install from the lockfile, lint, build and deploy to GitHub Pages. The Vite base path is `/portfolio/`. The generated PDF is committed, so GitHub’s runner does not require Python.
 
 The current design uses a white and pale-blue foundation, vivid blue actions and native system sans-serif typography. Melbourne is a prominent text location; the hero includes a conceptual telecom network illustration with motion and reduced-motion support.
 
